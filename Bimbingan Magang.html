@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bimbingan Magang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #c772fe;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .sidebar {
+      background-color: #a44de9;
+      min-height: 100vh;
+      padding: 1rem;
+      color: white;
+    }
+
+    .sidebar .btn {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 0.75rem;
+      background-color: #d9a6f5;
+      color: #3c006f;
+      font-weight: 500;
+    }
+
+    .sidebar .btn:hover {
+      background-color: #c682f0;
+    }
+
+    .sidebar .logout-btn {
+      background-color: #e9425d;
+      color: white;
+    }
+
+    .content-box {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+
+    .page-title {
+      color: white;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .form-label {
+      font-weight: 600;
+    }
+
+    .form-control,
+    .form-control:focus {
+      background-color: #f3dcff;
+      border: none;
+      box-shadow: none;
+    }
+
+    .btn-upload {
+      background-color: #7c23e0;
+      color: white;
+      font-weight: 500;
+    }
+
+    .btn-upload:hover {
+      background-color: #6b1ed1;
+      color: white;
+    }
+
+    .note-box {
+      background-color: #e4b7ff;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      color: #5b087e;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .text-area {
+      background-color: #f3dcff;
+      border: none;
+      resize: none;
+      min-height: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 sidebar d-flex flex-column align-items-start">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Univ._Amikom_Yogyakarta.svg/2048px-Logo_Univ._Amikom_Yogyakarta.svg.png"
+          alt="Amikom Logo" style="width: 100%; max-width: 180px;" class="mb-4 mx-auto d-block">
+        <button class="btn">Dashboard</button>
+        <button class="btn">Daftar Magang</button>
+        <button class="btn">Persetujuan Magang</button>
+        <button class="btn">Bimbingan Magang</button>
+        <button class="btn">Laporan Magang</button>
+        <button class="btn">Penilaian Perusahaan</button>
+        <button class="btn">Sertifikat Magang</button>
+        <button class="btn logout-btn mt-auto">Logout</button>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9 col-lg-10">
+        <h2 class="page-title">Bimbingan Magang</h2>
+        <div class="content-box mx-3 mb-5" style="background-color: #f4cbff;">
+          <!-- Upload Section -->
+          <div class="mb-3">
+            <label class="form-label">Upload Laporan Mingguan</label>
+            <input type="file" class="form-control mb-3">
+            <button class="btn btn-upload w-100">Kirim</button>
+          </div>
+
+          <!-- Catatan Dosen -->
+          <div class="note-box">Catatan Dosen</div>
+          <div class="mb-3">
+            <textarea class="form-control text-area" readonly>
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable...
+          </textarea>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control text-area" readonly>
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable...
+          </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Persetujuan Magang</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #a82ffb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100%;
+    }
+
+    .sidebar {
+      background-color: #a82ffb;
+      min-height: 100vh;
+      padding: 20px;
+      z-index: 10;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.187);
+      -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.211);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.153);
+
+      min-height: 100vh;
+    }
+
+    .sidebar .btn {
+      background-color: #c264fe;
+      color: black;
+      margin-bottom: 10px;
+      width: 100%;
+      border: none;
+      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.242);
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    .sidebar .btn:hover {
+      background-color: #b360ff;
+    }
+
+    .logout-btn {
+      background-color: #ff4d4d;
+    }
+
+    .main-card {
+      background-color: #a82ffb;
+      min-height: 100vh;
+      border-radius: 0 10px 10px 0;
+      padding: 30px;
+      color: black;
+
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+
+    .divider {
+      border-top: 3px solid white;
+      margin: 30px 0;
+    }
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row g-0 min-vh-100">
+      <!-- Sidebar -->
+      <div class="col-md-3 sidebar">
+        <div class="text-center mb-4">
+          <img src="assets/logo-amikom.png" class="w-50" width="50">
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <div class="">
+            <button class="btn">Dashboard</button>
+            <button class="btn">Daftar Magang</button>
+            <button class="btn">Persetujuan Magang</button>
+            <button class="btn">Bimbingan Magang</button>
+            <button class="btn">Laporan Magang</button>
+            <button class="btn">Penilaian Perusahaan</button>
+            <button class="btn">Sertifikat Magang</button>
+          </div>
+            <button class="btn logout-btn mt-4 bg-danger">Logout</button>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="col-md-9">
+        <div class="main-card">
+          <div class="bg-white py-3 mt-4 rounded-4">
+            <!-- Profile Mahasiswa -->
+            <div class="row align-items-center g-0 py-3" style="background-color:#c772fe ;">
+              <h3 class="text-white text-center">Profile Mahasiswa</h4>
+              <div class="row align-items-center justify-content-center g-4">
+                <!-- Foto Mahasiswa -->
+                <div class="col-lg-4 text-center">
+                  <img src="assets/foto.jpeg" alt="foto mahasiswa" class="rounded-circle img-thumbnail"
+                    style="max-width: 200px" />
+                </div>
+                <!-- Data Mahasiswa -->
+                <div class="col-lg-8">
+                  <div class="row g-3 mb-5">
+                    <div class="col-md-6">
+                      <small class="text-white text opacity-95">Nama</small>
+                      <p class="fw-semibold fs-5 mb-0">Farid Eka Pratama</p>
+                    </div>
+                    <div class="col-md-6">
+                      <small class="text-white text opacity-95">Dosen Wali</small>
+                      <p class="fw-semibold fs-5 mb-0">
+                        Hastari Utama, S.Kom., M.Cs.
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <small class="text-white text opacity-95">NIM</small>
+                      <p class="fw-semibold fs-5 mb-0">24.01.5215</p>
+                    </div>
+                    <div class="col-md-6">
+                      <small class="text-white text opacity-95">Email</small>
+                      <p class="fw-semibold fs-5 mb-0 text-break">
+                        faridekapratama@students.amikom.ac.id
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <small class="text-white text opacity-95">Fakultas</small>
+                      <p class="fw-semibold fs-5 mb-0">Fakultas Ilmu Komputer</p>
+                    </div>
+                    <div class="col-md-6">
+                      <small class="text-white text opacity-95">Program Studi</small>
+                      <p class="fw-semibold fs-5 mb-0">Teknik Informatika</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="" class="p-3 my-3" style="background-color: #c772fe">
+              <h3 class="text-white text-center mb-4">Profile Instansi Magang</h4>
+              <div class="mb-3">
+                <small class="text-white text opacity-95">Nama Instansi</small>
+                <p class="fw-semibold fs-5 mb-0">BUMN PT PG Candi Baru</p>
+              </div>
+              <div class="mb-3">
+                <small class="text-white text opacity-95">Alamat</small>
+                <p class="fw-semibold fs-5 mb-0">
+                  Jl. Medan Merdeka Selatan No.13, Jakarta
+                  10110 Indonesia
+                </p>
+              </div>
+              <div class="mb-3">
+                <small class="text-white text opacity-95">Website</small>
+                <p class="fw-semibold fs-5 mb-0"> https://bumn.go.id/profil/landing-page</p>
+              </div>
+              <div class="mb-3">
+                <small class="text-white text opacity-95">No Telepon</small>
+                <p class="fw-semibold fs-5 mb-0">+021 - 2993 5678</p>
+              </div>
+              <div class="mb-3">
+                <small class="text-white text opacity-95">Deskripsi Singkat</small>
+                <p class="fw-semibold fs-5 mb-0" style="text-align: justify">
+                  BUMN adalah singkatan dari Badan Usaha Milik Negara, yaitu perusahaan yang dimiliki dan dikelola oleh
+                  pemerintah.
+                  BUMN memiliki peran penting dalam penyelenggaraan perekonomian nasional dan diharapkan dapat memenuhi
+                  kebutuhan masyarakat
+                  di berbagai sektor, seperti energi, transportasi, dan telekomunikasi.
+                </p>
+              </div>
+            </div>
+            <!-- Main Contents End -->
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
